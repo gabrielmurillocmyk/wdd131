@@ -56,11 +56,6 @@ header, footer {
   fill: var(--neutral);
 }
 
-.data h2::after {
-  content: " 📊";
-  margin-left: 8px;
-}
-
 .data, .weather {
   padding: 1rem;
 }
@@ -70,4 +65,9 @@ header, footer {
     display: block;
     gap: 2rem;
   }
+  .data h2::after {
+  content: " 📊";
+  margin-left: 8px;
+  }
+
 }
