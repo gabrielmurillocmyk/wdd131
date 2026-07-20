@@ -1,0 +1,82 @@
+:root {
+  --red: #EF3340;
+  --blue: #0033A0;
+  --neutral: #fff;
+  --text: #333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: var(--text);
+}
+
+header, footer {
+  background-color: var(--blue);
+  color: var(--neutral);
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 600px; /* keeps image from being too tall */
+  object-fit: cover;
+}
+
+.card {
+  position: absolute;
+  background-color: rgba(0, 51, 160, 0.85); /* semi-transparent blue */
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+}
+
+/* Positioning */
+.data {
+  top: 20px;
+  left: 20px;
+}
+
+.weather {
+  bottom: 20px;
+  left: 20px;
+}
+
+.weather h2::after {
+  content: " ⛅";
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(239, 51, 64, 0.7); /* semi-transparent red */
+  color: var(--neutral);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.data, .weather {
+  padding: 1rem;
+}
+
+.weather h2::after {
+  content: " ⛅"; /* pseudo-element for large view */
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
