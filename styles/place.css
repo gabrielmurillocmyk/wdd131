@@ -20,12 +20,12 @@ header, footer {
 
 .hero {
   position: relative;
+  width: 100%;        /* full width of screen */
 }
 
-.hero source {
+.hero img{
   max-width: 100%;
   height: auto;
-  max-height: 600px;
 }
 
 .card {
@@ -52,29 +52,13 @@ header, footer {
   content: " ⛅";
 }
 
-.hero-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(239, 51, 64, 0.7); /* semi-transparent red */
-  color: var(--neutral);
-  padding: 1rem;
-  border-radius: 8px;
-}
-
 .data, .weather {
   padding: 1rem;
 }
 
-.weather h2::after {
-  content: " ⛅"; /* pseudo-element for large view */
-}
-
 @media (min-width: 768px) {
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
     gap: 2rem;
   }
 }
