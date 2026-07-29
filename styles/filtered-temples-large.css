@@ -1,0 +1,25 @@
+@media only screen and (min-width: 48rem) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  figure {
+    transition: transform 0.3s ease;
+  }
+
+  figure:hover {
+    transform: scale(1.03);
+  }
+#menuButton {
+    display: none;
+  }
+  .temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
