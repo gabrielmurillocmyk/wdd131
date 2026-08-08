@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmed | Progress Saved</title>
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const displayField = document.getElementById("counter-display");
+      
+      // Fetch and calculate submission numbers inside localStorage safely
+      let reviewsCount = parseInt(localStorage.getItem("totalCompletedReviewsCount"), 10) || 0;
+      reviewsCount += 1;
+      localStorage.setItem("totalCompletedReviewsCount", reviewsCount.toString());
+
+      if (displayField) {
+        displayField.textContent = `Reviews Completed Counter: ${reviewsCount} review${reviewsCount > 1 ? 's' : ''} completed.`;
+      }
+    });
+  </script>
+</head>
+<body>
+
+  <header class="app-header">
+    <h1>Review Captured</h1>
+  </header>
+
+  <main class="review-main-shell">
+    <div class="form-card-container thanks-layout">
+      <!-- Maroon badge container displaying active tracking scores -->
+      <div id="counter-display" class="counter-badge">Updating counter data...</div>
+      
+      <h2>Thank You for Your Feedback!</h2>
+      <p>Your hardware assessment parameters have been successfully written to local storage client cache.</p>
+      
+      <div class="form-submit-row">
+        <a href="form.html" class="post-review-btn return-btn">Submit Another Review</a>
+      </div>
+    </div>
+  </main>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Murillo </p>
+        <p>Quito | Ecuador</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
