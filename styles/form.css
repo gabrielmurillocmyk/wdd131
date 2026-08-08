@@ -8,7 +8,7 @@ body {
 
 /* Deep maroon top brand bar alignment structure */
 .app-header {
-  background-color: #832c12;
+  background-color: #810644;
   color: #ffffff;
   padding: 1.25rem 1rem;
   text-align: center;
@@ -29,7 +29,7 @@ body {
 
 /* Submission metrics visualization badge elements styles */
 .counter-badge {
-  background-color: #d68915e8;
+  background-color: #940b4f;
   color: #ffffff;
   padding: 0.75rem;
   border-radius: 4px;
@@ -218,8 +218,8 @@ textarea:focus {
 }
 
 /* Assignment Common Footer Area alignment */
-.app-footer {
-  background-color: #3e0622;
+footer {
+  background-color: #940b4f;
   color: #ffffff;
   text-align: center;
   padding: 1.5rem;
@@ -228,6 +228,6 @@ textarea:focus {
   border-top: 3px solid #2b0316;
 }
 
-.app-footer p {
+footer p {
   margin: 0.4rem 0;
 }
