@@ -1,52 +1,78 @@
 /* Product review design*/
+/* ==========================================================================
+   PRODUCT REVIEW FORM DESIGN PRINCIPLES & COMPLIANCE RULES
+   ========================================================================== */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f7f5f8;
-  color: #1d2731;
+  background-color: #f4f6f9;
+  color: #1a1a1a;
 }
 
-/* Deep maroon top brand bar alignment structure */
+/* Maroon heading bar background definition */
 .app-header {
-  background-color: #810644;
+  background-color: #7d0a41; 
   color: #ffffff;
   padding: 1.25rem 1rem;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .app-header h1 {
   margin: 0;
-  font-size: 1.75rem;
-  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .review-main-shell {
-  padding: 2rem 1rem;
-  max-width: 550px;
+  padding: 2.5rem 1rem;
+  max-width: 520px;
   margin: 0 auto;
 }
 
-/* Submission metrics visualization badge elements styles */
+/* Visual Required field elements indicators */
+.req-star {
+  color: #d91414; /* Deep vibrant red for clear accessibility visibility indicators */
+  font-weight: 700;
+}
+
+.required-notice-banner {
+  font-size: 0.9rem;
+  text-align: left;
+  margin: 0 0 1.25rem 0;
+  font-style: italic;
+  color: #333333;
+}
+
+/* Maroon centered counter badge box structure */
 .counter-badge {
-  background-color: #940b4f;
+  background-color: #7d0a41;
   color: #ffffff;
-  padding: 0.75rem;
+  padding: 0.85rem;
   border-radius: 4px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   font-weight: 700;
   font-size: 0.95rem;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Form background container card layout parameters matching screenshot */
+/* Muted tech slate background layout matching image perfectly */
 .form-card-container {
-  background-color: #cfdbe2;
-  padding: 2rem 1.5rem;
-  border-radius: 6px;
-  border: 1px solid #c8bccb;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  background-color: #b8c6d1; 
+  padding: 2.25rem 1.75rem;
+  border-radius: 4px;
+  border: 1px solid #a3b2be;
+  box-sizing: border-box;
+}
+
+.thanks-layout h2 {
+  color: #7d0a41;
+  text-align: center;
+}
+
+.thanks-layout p {
+  text-align: center;
+  line-height: 1.5;
 }
 
 .field-item {
@@ -65,15 +91,17 @@ body {
 .field-title {
   font-weight: 700;
   font-size: 1.05rem;
-  color: #2b0316;
+  color: #000000;
   text-align: left;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .subtitle-text {
   font-weight: 400;
   font-style: italic;
-  font-size: 0.95rem;
-  color: #4a4a4a;
+  font-size: 0.9rem;
+  color: #555555;
 }
 
 .tag-optional {
@@ -82,23 +110,20 @@ body {
   font-weight: 400;
 }
 
-/* Core form fields input formatting boundaries */
 #product-select,
 input[type="date"],
 input[type="text"],
 textarea {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.75rem;
   font-size: 1rem;
-  border: 1px solid #9f91a1;
+  border: 1px solid #999999;
   border-radius: 4px;
   background-color: #ffffff;
   box-sizing: border-box;
-  font-family: inherit;
-  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* INTERACTION DESIGNS: Clear, high-contrast active focus state indicators */
+/* High contrast active field accessibility highlights */
 #product-select:focus,
 input[type="date"]:focus,
 input[type="text"]:focus,
@@ -106,24 +131,23 @@ textarea:focus {
   outline: none;
   border: 2px solid #227ad3;
   background-color: #f0f8ff;
-  box-shadow: 0 0 4px rgba(34, 122, 211, 0.3);
 }
 
-/* Star Rating Matrix layouts distribution patterns */
+/* Star matrix container box styling rules */
 .star-rating-matrix {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1.25rem 1rem;
   border-radius: 4px;
-  border: 1px solid #9f91a1;
+  border: 1px solid #999999;
 }
 
 .star-radio-node {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.4rem;
   cursor: pointer;
   flex: 1;
 }
@@ -133,36 +157,30 @@ textarea:focus {
   width: 18px;
   height: 18px;
   cursor: pointer;
-  order: 2; /* Forces circle button indicators to sit cleanly underneath star symbols */
-}
-
-/* Focus styles for keyboard star tab selections */
-.star-radio-node input[type="radio"]:focus {
-  outline: 2px solid #227ad3;
+  order: 2; /* Positions circles cleanly under the star symbols */
 }
 
 .star-glyph {
-  font-size: 1.5rem;
-  color: #333333;
+  font-size: 1.3rem;
+  color: #444444;
   order: 1;
 }
 
 .star-text {
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #555555;
+  font-size: 0.85rem;
+  color: #333333;
   order: 3;
 }
 
-/* Multi-choice checkbox stacking arrangements */
+/* Checkbox vertical layout stack wrapper style metrics */
 .checkbox-stack-container {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 4px;
-  border: 1px solid rgba(159, 145, 161, 0.5);
+  border: 1px solid rgba(153, 153, 153, 0.4);
 }
 
 .checkbox-row-line {
@@ -173,8 +191,8 @@ textarea:focus {
 }
 
 .checkbox-row-line input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
   margin: 0;
 }
@@ -182,52 +200,62 @@ textarea:focus {
 .checkbox-row-line label {
   font-size: 1rem;
   cursor: pointer;
-  user-select: none;
 }
 
-/* Submission action trigger button controls */
 .form-submit-row {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .post-review-btn {
+  display: block;
   width: 100%;
-  padding: 1rem;
-  font-size: 1.15rem;
+  padding: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  background-color: #f4edf5;
-  color: #3e0622;
-  border: 1px solid #9f91a1;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #888888;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
 }
 
 .post-review-btn:hover {
-  background-color: #ebdfee;
+  background-color: #eaeaea;
 }
 
-.post-review-btn:focus {
-  outline: none;
-  border: 2px solid #227ad3;
-  box-shadow: 0 0 5px rgba(34, 122, 211, 0.5);
+.return-btn {
+  background-color: #7d0a41;
+  color: #ffffff;
+  border: none;
 }
 
-.post-review-btn:active {
-  transform: scale(0.99);
+.return-btn:hover {
+  background-color: #610632;
 }
 
-/* Assignment Common Footer Area alignment */
 footer {
-  background-color: #940b4f;
+  background-color: #7d0a41;
   color: #ffffff;
   text-align: center;
   padding: 1.5rem;
   margin-top: 4rem;
   font-size: 0.95rem;
-  border-top: 3px solid #2b0316;
 }
 
 footer p {
   margin: 0.4rem 0;
+}
+
+@media (min-width: 768px) {
+  .review-main-shell {
+    max-width: 700px; /* Expands to give elements breathing room on wider viewports */
+  }
+  
+  .form-card-container {
+    padding: 3rem; /* Extra inner spacing supports clean proximity layout principles */
+  }
 }
