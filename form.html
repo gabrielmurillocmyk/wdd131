@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Submission Form</title>
+  <meta name="description" content="Dedicated high-durability hardware assessment and customer review feedback document.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <!-- Sequential Style Sheet Layout Pipelines -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/form.css">
+
+  <!-- Dynamic Product Injection Script Module Call -->
+  <script src="scripts/form.js" type="module" defer></script>
+</head>
+<body>
+
+  <!-- Top Bar Heading matching your reference mockup exactly -->
+  <header class="app-header">
+    <h1>Product Review</h1>
+  </header>
+
+  <!-- Centered Form Display Shell Container Area -->
+  <main class="review-main-shell">
+    <section class="form-card-container">
+      
+      <!-- Display counter for user feedback tracking -->
+      <div id="counter-display" class="counter-badge"></div>
+
+      <!-- Rubric Requirement: GET method targeting review.html for local GitHub compatibility -->
+      <form method="get" action="review.html" id="reviewForm">
+        
+        <!-- 1. Selection Element (Options injected cleanly via script using array elements) -->
+        <div class="field-item">
+          <label for="product-select" class="field-title">Product Name</label>
+          <select id="product-select" name="productName" required>
+            <!-- Instructional placeholder: disabled and selected by default -->
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
+
+        <!-- 2. Overall Rating Stars System (Radio buttons share identical name for mutual exclusivity) -->
+        <fieldset class="fieldset-block">
+          <legend class="field-title">Overall Rating</legend>
+          <div class="star-rating-matrix">
+            
+            <label for="star1" class="star-radio-node">
+              <input type="radio" id="star1" name="overallRating" value="1" required>
+              <span class="star-glyph">&#9734;</span>
+              <span class="star-text">1</span>
+            </label>
+
+            <label for="star2" class="star-radio-node">
+              <input type="radio" id="star2" name="overallRating" value="2" required>
+              <span class="star-glyph">&#9734;</span>
+              <span class="star-text">2</span>
+            </label>
+
+            <label for="star3" class="star-radio-node">
+              <input type="radio" id="star3" name="overallRating" value="3" required>
+              <span class="star-glyph">&#9734;</span>
+              <span class="star-text">3</span>
+            </label>
+
+            <label for="star4" class="star-radio-node">
+              <input type="radio" id="star4" name="overallRating" value="4" required>
+              <span class="star-glyph">&#9734;</span>
+              <span class="star-text">4</span>
+            </label>
+
+            <label for="star5" class="star-radio-node">
+              <input type="radio" id="star5" name="overallRating" value="5" required>
+              <span class="star-glyph">&#9734;</span>
+              <span class="star-text">5</span>
+            </label>
+
+          </div>
+        </fieldset>
+
+        <!-- 3. Calendar Date Field Element -->
+        <div class="field-item">
+          <label for="install-date" class="field-title">Date of Installation</label>
+          <input type="date" id="install-date" name="installationDate" required>
+        </div>
+
+        <!-- 4. Multi-choice Checklist System -->
+        <fieldset class="fieldset-block">
+          <legend class="field-title">Which features did you find useful in the product? <br><span class="subtitle-text">(Check all that apply)</span></legend>
+          <div class="checkbox-stack-container">
+            
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="feat-durability" name="usefulFeatures" value="durability">
+              <label for="feat-durability">Durability</label>
+            </div>
+
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="feat-ease" name="usefulFeatures" value="ease-of-use">
+              <label for="feat-ease">Ease of Use</label>
+            </div>
+
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="feat-performance" name="usefulFeatures" value="performance">
+              <label for="feat-performance">Performance</label>
+            </div>
+
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="feat-design" name="usefulFeatures" value="design">
+              <label for="feat-design">Design</label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- 5. Large Textarea Review Block Field (Optional) -->
+        <div class="field-item">
+          <label for="written-text" class="field-title">Written Review <span class="tag-optional">(Optional)</span></label>
+          <textarea id="written-text" name="writtenReview" rows="5"></textarea>
+        </div>
+
+        
+        <div class="field-item">
+          <label for="reviewer-name" class="field-title">Your Name <span class="tag-optional">(Optional)</span></label>
+          <input type="text" id="reviewer-name" name="userName">
+        </div>
+
+        <!-- Submission Node Trigger Button -->
+        <div class="form-submit-row">
+          <input type="submit" value="Post Review" class="post-review-btn">
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Murillo | Quito - Ecuador</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

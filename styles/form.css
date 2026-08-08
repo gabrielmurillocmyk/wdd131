@@ -1,0 +1,233 @@
+/* Product review design*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f7f5f8;
+  color: #1d2731;
+}
+
+/* Deep maroon top brand bar alignment structure */
+.app-header {
+  background-color: #832c12;
+  color: #ffffff;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+}
+
+.review-main-shell {
+  padding: 2rem 1rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Submission metrics visualization badge elements styles */
+.counter-badge {
+  background-color: #d68915e8;
+  color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Form background container card layout parameters matching screenshot */
+.form-card-container {
+  background-color: #cfdbe2;
+  padding: 2rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #c8bccb;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.field-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.fieldset-block {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.field-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #2b0316;
+  text-align: left;
+}
+
+.subtitle-text {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
+.tag-optional {
+  color: #431f9e;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* Core form fields input formatting boundaries */
+#product-select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #9f91a1;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* INTERACTION DESIGNS: Clear, high-contrast active focus state indicators */
+#product-select:focus,
+input[type="date"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #227ad3;
+  background-color: #f0f8ff;
+  box-shadow: 0 0 4px rgba(34, 122, 211, 0.3);
+}
+
+/* Star Rating Matrix layouts distribution patterns */
+.star-rating-matrix {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #9f91a1;
+}
+
+.star-radio-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.star-radio-node input[type="radio"] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  order: 2; /* Forces circle button indicators to sit cleanly underneath star symbols */
+}
+
+/* Focus styles for keyboard star tab selections */
+.star-radio-node input[type="radio"]:focus {
+  outline: 2px solid #227ad3;
+}
+
+.star-glyph {
+  font-size: 1.5rem;
+  color: #333333;
+  order: 1;
+}
+
+.star-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555555;
+  order: 3;
+}
+
+/* Multi-choice checkbox stacking arrangements */
+.checkbox-stack-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid rgba(159, 145, 161, 0.5);
+}
+
+.checkbox-row-line {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.checkbox-row-line input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.checkbox-row-line label {
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Submission action trigger button controls */
+.form-submit-row {
+  margin-top: 1rem;
+}
+
+.post-review-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  background-color: #f4edf5;
+  color: #3e0622;
+  border: 1px solid #9f91a1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.post-review-btn:hover {
+  background-color: #ebdfee;
+}
+
+.post-review-btn:focus {
+  outline: none;
+  border: 2px solid #227ad3;
+  box-shadow: 0 0 5px rgba(34, 122, 211, 0.5);
+}
+
+.post-review-btn:active {
+  transform: scale(0.99);
+}
+
+/* Assignment Common Footer Area alignment */
+.app-footer {
+  background-color: #3e0622;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  border-top: 3px solid #2b0316;
+}
+
+.app-footer p {
+  margin: 0.4rem 0;
+}
