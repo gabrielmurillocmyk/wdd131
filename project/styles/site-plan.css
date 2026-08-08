@@ -1,0 +1,124 @@
+
+:root {
+    --primary-color: #0b3c5d;      /* Classic Deep Blue*/
+    --secondary-color: #328cc1;    /* Active Blue*/
+    --accent-color: #d9b310;       /* Athletic Gold*/
+    --background-color: #ffffff;   /* Pure White - Main workspace container background */
+    --light-bg: #f9f9f9;           /* Clean Grey*/
+    --text-color: #1d2731;         /* Charcoal Dark*/
+}
+
+body {
+    /* Typography Matrix Compliance */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 4px solid var(--primary-color);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--light-bg);
+    border-radius: 6px;
+    border-left: 6px solid var(--primary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Home Page Wireframe Placeholder Grids */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .wireframe-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.wireframe-box {
+    border: 2px dashed var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 6px;
+}
+
+.wireframe-box p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.wireframe-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto 0 auto;
+    border: 1px dashed var(--secondary-color);
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--text-color);
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
