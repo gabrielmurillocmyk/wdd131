@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fps-01",
+    "name": "Apex Precision Mechanical Keyboard",
+    "category": "fps",
+    "price": "129.99",
+    "image": "images/fps-01.webp",
+    "feature": "Hot-swappable linear optical switches with double-shot PBT keycaps for intense keystroke durability.",
+    "specs": "Switches: Linear Optical | Lifespan: 100M Clicks | Keycaps: Double-shot PBT | Connection: Detachable Type-C"
+  },
+  {
+    "id": "fps-02",
+    "name": "Raptor Low-Latency Optical Mouse",
+    "category": "fps",
+    "price": "79.99",
+    "image": "images/fps-02.webp",
+    "feature": "Ultra-lightweight 58g chassis utilizing a 26K DPI optical sensor for pixel-perfect tracking speeds.",
+    "specs": "Sensor: 26K Optical | Weight: 58g | Polling Rate: 4000Hz | Switches: Optical Mouse Switches"
+  },
+  {
+    "id": "fgt-01",
+    "name": "Vanguard Arcade Fight Stick",
+    "category": "fighting",
+    "price": "149.99",
+    "image": "images/fgt-01.webp",
+    "feature": "Authentic Sanwa Denshi arcade buttons backed by a heavy steel reinforcement frame built for match tournament durability.",
+    "specs": "Buttons: Sanwa Denshi | Lever: Sanwa JLF | Base: Heavy Steel Plate | Compatibility: PC, PS5, Xbox"
+  },
+  {
+    "id": "rac-01",
+    "name": "Formula-Drive Force Wheel",
+    "category": "racing",
+    "price": "119.99",
+    "image": "images/rac-01.webp",
+    "feature": "Dual-motor realistic force feedback system with hand-stitched leather rim coating and stainless steel paddle shifters.",
+    "specs": "Feedback: Dual-Motor | Rotation: 900 Degrees | Shifters: Stainless Steel | Pedals: Nonlinear Brake Pedal"
+  },
+  {
+    "id": "spt-01",
+    "name": "Titan Spatial Audio Headset",
+    "category": "sports",
+    "price": "99.99",
+    "image": "images/spt-01.webp",
+    "feature": "50mm customized neodymium drivers providing 360-degree positional immersion and clean stadium crowd noise balance.",
+    "specs": "Drivers: 50mm Neodymium | Response: 20Hz-20kHz | Mic: Detachable Noise-Canceling | Spatial: 7.1 Virtual Sound"
+  },
+  {
+    "id": "spt-02",
+    "name": "Vector Pro Hall-Effect Controller",
+    "category": "sports",
+    "price": "89.99",
+    "image": "images/spt-02.webp",
+    "feature": "Magnetic Hall-Effect analog joysticks completely immune to stick-drift errors during aggressive sports execution loops.",
+    "specs": "Sticks: Hall-Effect Magnetic | Triggers: Analog Hall-Effect | Grips: Textured Rubber | Profiles: 3 Onboard Slots"
+  },
+  {
+    "id": "gen-01",
+    "name": "Endurance Ergonomic Gaming Chair",
+    "category": "training",
+    "price": "249.99",
+    "image": "images/gen-01.webp",
+    "feature": "High-density molded cold foam cushioning wrapped in water-resistant premium faux leather structures.",
+    "specs": "Foam: Cold-Molded High-Density | Frame: Class 4 Gas Lift Steel | Recline: 135 Degrees | Armrests: 4D Adjustable"
+  },
+  {
+    "id": "gam-01",
+    "name": "Tactical Strike: Remastered (Steelbook Edition)",
+    "category": "fps",
+    "price": "69.99",
+    "image": "images/gam-01.webp",
+    "feature": "Premium physical edition containing the baseline high-tick rate esports shooter, housed in a scratch-resistant collector steel case.",
+    "specs": "Genre: First-Person Shooter | Edition: Steelbook Physical | Players: 1-10 Network | Platform: Universal Console"
+  },
+  {
+    "id": "gam-02",
+    "name": "FC 26",
+    "category": "sports",
+    "price": "59.99",
+    "image": "images/gam-02.webp",
+    "feature": "The complete current-season definitive physical disc compilation featuring highly optimized animation response mapping physics updates.",
+    "specs": "Genre: Sports Simulation | Engine: HyperMotion Pro | Modes: Career, Ultimate Hub | Resolution: 4K UHD Native"
+  },
+  {
+    "id": "gam-03",
+    "name": "Grand Prix Simulator Ultra",
+    "category": "racing",
+    "price": "464.99",
+    "image": "images/gam-03.webp",
+    "feature": "High-fidelity physical disc simulation calibrated with extensive dynamic telemetry output to map directly onto tracking racing wheels.",
+    "specs": "Genre: Racing Simulation | Physics: Soft-Body Tire Matrix | Telemetry Output: Supported | Tracks: 24 Real Circuits"
+  }
+]

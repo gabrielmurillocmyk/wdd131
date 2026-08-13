@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Nexus | Join Experience Hub</title>
+  <meta name="description" content="Configure your profile, select your favorite genre setup parameters, and track your membership status securely inside the Gaming Nexus Hub.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta property="og:title" content="Gaming Nexus | Join Experience Portal">
+  <meta property="og:description" content="Input your gameplay preferences to find the ideal hardware configurations and stay tracked via localStorage.">
+  <meta property="og:image" content="https://github.io">
+  <meta property="og:url" content="https://github.io">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/homepage.js" type="module"></script>
+  <script src="scripts/form.js" type="module"></script>
+</head>
+<body>
+
+  <header class="global-header">
+    
+      <img src="images/logo.webp" alt="Gaming Nexus Logo" class="logo-graphic" width="50" height="50">
+      <span class="brand-title">Gaming Nexus</span>
+    </div>
+    <button id="hamburger-menu-btn" aria-label="Toggle navigation options panel menu">☰</button>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="catalog.html" class="nav-active">Gear Directory</a></li>
+        <li><a href="form.html">Join Hub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-main-shell">
+    <h1 class="main-page-title">Experience Profile Hub</h1>
+    <p class="form-intro-subtext">Submit your setup profile details below to process community access metrics and capture selection queries.</p>
+
+    <section class="form-workspace-card">
+      <p class="visual-clue-instruction">Fields marked with an asterisk (<span class="req-star-clue">*</span>) are strictly required.</p>
+
+      <form method="get" action="thankyou.html" id="gaming-nexus-custom-form" class="apex-custom-form">
+        
+        <div class="form-field-row">
+          <label for="primary-genre-select">Primary Gaming Genre <span class="req-star-clue">*</span></label>
+          <select id="primary-genre-select" name="targetGenre" required>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
+
+        <fieldset class="form-fieldset-block">
+          <legend>Weekly Play Session Duration <span class="req-star-clue">*</span></legend>
+          <div class="radio-options-matrix">
+            <label for="freq-low" class="radio-node-item">
+              <input type="radio" id="freq-low" name="playFrequency" value="casual" required>
+              <span class="custom-radio-label">1-5 Hours (Casual)</span>
+            </label>
+            <label for="freq-mid" class="radio-node-item">
+              <input type="radio" id="freq-mid" name="playFrequency" value="regular" required>
+              <span class="custom-radio-label">6-15 Hours (Regular)</span>
+            </label>
+            <label for="freq-high" class="radio-node-item">
+              <input type="radio" id="freq-high" name="playFrequency" value="intensive" required>
+              <span class="custom-radio-label">16+ Hours (Intensive)</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-field-row">
+          <label for="target-needed-date">Expected Setup Installation Date <span class="req-star-clue">*</span></label>
+          <input type="date" id="target-needed-date" name="installationDate" required>
+        </div>
+
+        <fieldset class="form-fieldset-block">
+          <legend>Critical Utility Demands <span class="subtitle-note">(Check all that apply)</span></legend>
+          <div class="checkbox-options-stack">
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="demand-seams" name="utilityDemands" value="low-latency">
+              <label for="demand-seams">Ultra-Low Latency Wireless Connectivity</label>
+            </div>
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="demand-grip" name="utilityDemands" value="hall-effect">
+              <label for="demand-grip">Anti-Drift Magnetic Hall-Effect Sticks</label>
+            </div>
+            <div class="checkbox-row-line">
+              <input type="checkbox" id="demand-breathable" name="utilityDemands" value="hot-swap">
+              <label for="demand-breathable">Hot-Swappable Mechanical Switch Sockets</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-field-row">
+          <label for="sizing-notes-area">Hardware Customization Requirements <span class="optional-badge">(Optional)</span></label>
+          <textarea id="sizing-notes-area" name="customDemands" rows="5" placeholder="Specify key preferences like tension tuning, custom keycap sizing..."></textarea>
+        </div>
+
+        <div class="form-field-row">
+          <label for="athlete-name-input">Gamer Tag / Profile Identifier <span class="optional-badge">(Optional)</span></label>
+          <input type="text" id="athlete-name-input" name="gamerTag" placeholder="e.g., NeoVanguard">
+        </div>
+
+        <div class="form-actions-row">
+          <input type="submit" value="Submit Sizing Inquiry" class="btn-form-submit">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="global-footer">
+    <div class="footer-content-wrapper">
+      <p>&copy; <span id="footer-year">2026</span> | Gaming Nexus | Gabriel Murillo | Quito - Ecuador</p>
+      <div class="footer-links-row">
+        <a href="attributions.html">Resource Attributions</a>
+      </div>
+      <p class="footer-date-stamp">Last Modification: <span id="footer-modified-stamp"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

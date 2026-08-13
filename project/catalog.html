@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Nexus | Hardware & Title Directory</title>
+  <meta name="description" content="Browse our comprehensive, durable sports gaming directory. Filter reinforced gear configurations and responsive titles for FPS, racing, and sports.">
+  <meta name="author" content="Gabriel Murillo">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta property="og:title" content="Gaming Nexus | Premium Catalog Directory">
+  <meta property="og:description" content="Dynamically explore 10 premium video game gear items and physical editions featuring deep technical specifications.">
+  <meta property="og:image" content="https://github.io">
+  <meta property="og:url" content="https://github.io">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/homepage.js" type="module"></script>
+  <script src="scripts/catalog.js" type="module"></script>
+</head>
+<body>
+
+  <header class="global-header">
+    
+      <img src="images/logo.webp" alt="Gaming Nexus Logo" class="logo-graphic" width="50" height="50">
+      <span class="brand-title">Gaming Nexus</span>
+    </div>
+    <button id="hamburger-menu-btn" aria-label="Toggle navigation options panel menu">☰</button>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="catalog.html" class="nav-active">Gear Directory</a></li>
+        <li><a href="form.html">Join Hub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="directory-main-shell">
+    <h1 class="main-page-title">Hardware & Game Directory</h1>
+    <p class="directory-intro-text">Filter through our high-tier selections to view response rates, retail pricing, and structural details.</p>
+
+    <div class="filter-controls-container">
+      <button class="filter-btn active-filter" data-category="all">Show All Items</button>
+      <button class="filter-btn" data-category="fps">FPS Field</button>
+      <button class="filter-btn" data-category="fighting">Fighter Striking</button>
+      <button class="filter-btn" data-category="racing">Sim Racing</button>
+      <button class="filter-btn" data-category="sports">Sports Simulators</button>
+    </div>
+
+    <div id="directory-error-fallback" class="fallback-error-message" aria-live="assertive"></div>
+
+    <!-- TARGET CONTAINER: Managed via Named Grid Template Areas -->
+    <section id="gear-catalog-grid" class="directory-cards-grid">
+      <!-- Generated dynamically through scripts/directory.js -->
+    </section>
+
+    <dialog id="gear-detail-modal" class="accessible-dialog-overlay">
+      <div class="modal-content-wrapper">
+        <button id="modal-close-trigger-btn" class="modal-close-icon" aria-label="Close details overlay window">✕</button>
+        <h2 id="modal-product-name">Product Name Placeholder</h2>
+        <figure class="modal-figure-frame">
+          <img id="modal-product-image" src="images/logo.webp" alt="Product thumbnail placeholder" width="300" height="200">
+        </figure>
+        <div class="modal-specs-body">
+          <p><strong>Genre/Category:</strong> <span id="modal-product-category">Category</span></p>
+          <p><strong>Retail Price:</strong> $<span id="modal-product-price">0.00</span></p>
+          <p><strong>Primary Feature:</strong> <span id="modal-product-feature">Feature description</span></p>
+          <div class="specs-pill-box">
+            <h3>Technical Blueprint Specifications</h3>
+            <p id="modal-product-specs">Detailed blueprint materials information text line blocks...</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="global-footer">
+    <div class="footer-content-wrapper">
+      <p>&copy; <span id="footer-year">2026</span> | Gaming Nexus | Gabriel Murillo | Quito - Ecuador</p>
+      <div class="footer-links-row">
+        <a href="attributions.html">Resource Attributions</a>
+      </div>
+      <p class="footer-date-stamp">Last Modification: <span id="footer-modified-stamp"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
