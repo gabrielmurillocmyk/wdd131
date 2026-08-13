@@ -7,7 +7,7 @@ const products = [
   { id: "spt-02", name: "Vector Pro Hall-Effect Controller", averagerating: 4.7 },
   { id: "gen-01", name: "Endurance Ergonomic Gaming Chair", averagerating: 4.4 },
   { id: "gam-01", name: "Tactical Strike: Remastered (Steelbook)", averagerating: 4.8 },
-  { id: "gam-02", name: "Championship Soccer 2026", averagerating: 4.2 },
+  { id: "gam-02", name: "FC 26", averagerating: 4.2 },
   { id: "gam-03", name: "Grand Prix Simulator Ultra", averagerating: 4.9 }
 ];
 
